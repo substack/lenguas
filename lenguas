@@ -1,0 +1,3 @@
+#!/bin/bash
+dict -d $1 "$2" | grep -vE '^[0-9]+ definition found' \
+  | grep -vE '^From .* Dictionary' | grep -E '\S'
